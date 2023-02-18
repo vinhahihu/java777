@@ -1,0 +1,26 @@
+package java;
+import java.util.Scanner;
+public class Java {
+    public static void main(String[] args) {
+     double a, b, c, x1, x2, delta;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhap a la: ");
+        a = scanner.nextDouble();
+        System.out.print("Nhap b la: ");
+        b = scanner.nextDouble();
+        System.out.print("Nhap c la: ");
+        c = scanner.nextDouble();
+        System.out.println("phuong trinh bac hai: " + a + "x^2 + " + b + "x + " + c + " = 0");
+        delta = b * b - 4 * a * c;
+        if (delta < 0) {
+            System.out.println("pt vo nghiem");
+        } else if (delta == 0) {
+            x1 = -b / (2 * a);
+            System.out.println("pt co 1 nghiem la x1 = x2 = " + x1);
+        } else {
+            x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            System.out.println("pt co 2 nghiem la x1 = " + x1 + " và x2 = " + x2);
+        }
+    }
+    }
