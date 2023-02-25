@@ -1,0 +1,32 @@
+package BaiTapLab3;
+
+public class Hinhvuong {
+    private String tenHinh;
+    public String getTenHinh() {
+        return tenHinh;
+    }
+
+
+    private Double canh;
+    public Double getCanh() {
+        return canh;
+    }
+    public void setCanh(int i) {
+        if(i <0){
+            System.out.println("Khong hop le");
+    }else{
+        this.canh = (double) i;
+        float chuvihv = (float) (i*4);
+        float dientichhv = (float) (i*i);
+        System.out.println("Chu vi Hinh Vuong= "+chuvihv);
+        System.out.println("Dien tich Hinh Vuong= "+dientichhv);
+    }
+}
+
+    public Hinhvuong( String tenHinh, int canh ) {
+        this.tenHinh = tenHinh;
+        this.canh = (double) canh;
+    }
+    public Hinhvuong() {
+    }
+}
