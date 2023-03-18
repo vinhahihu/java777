@@ -1,0 +1,33 @@
+package Baitaplab6;
+
+public class Nhanvien {
+    String ten ;
+    long luong ;
+    public void tinhluong {
+        System.out.println("lương....")
+    }
+    
+}
+public class Nhanvienparttime extends Nhanvien {
+    @Override
+    int giolamviec ;
+    public void tinhluong{
+        System.out.println("lương nhân viên ......")
+        System.out.println("Giờ làm việc..........")
+    }
+}
+public class Nhanvienfulltime extends Nhanvien{
+    @Override
+    int loaichucvu; 
+    int ngaylamthem;
+    public void tinhluong{
+        System.out.println("Loại chức vụ..........");
+        System.out.println("Ngày làm ...........");
+        System.out.println("lương nhân viên.......")
+    }
+}
+class public static void main(String[] args) {
+    Nhanvien nhanvien = new Nhanvien();
+    Nhanvien mynhanvienparttime = new Nhanvienparttime();
+    Nhanvien mynhanvienfulltime = new Nhanvienfulltime();
+}
