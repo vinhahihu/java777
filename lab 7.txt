@@ -1,0 +1,24 @@
+
+package baitaplab7;
+
+public class Baitaplab7 {
+public abstract class xeMay{
+    abstract void break();
+}
+    class xeMaythethao extends xeMay{
+        @Override
+        public void break{
+        System.out.println("dung xe");
+    }
+    }
+    class xeMayleonui extends xeMay{
+        @Override
+        public  void break{
+        System.out.println("dung xe");
+    }
+    }
+    public static void main(String[] args) {
+        System.out.println("xeMaythethao"+"xeMayleonui");
+        
+    }
+}
