@@ -1,0 +1,22 @@
+
+package baitaplab8	;
+
+public interface Shape() {
+public void draw();
+}
+public class Rectangle implements Shape(){
+@override
+public void draw(){
+    System.out.println(".........")
+}
+}
+public class Circle  implements Shape(){
+    @override
+    public void draw(){
+        System.out.println(".........")
+    }
+}
+public class public static void main(String[] args) {
+    Rectangle re = new Rectangle();
+    Circle cr = new Circle();
+}
